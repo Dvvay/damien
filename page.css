@@ -1,0 +1,126 @@
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr; /* crée 2 colonnes */
+	grid-auto-rows: minmax(50px, auto); /* crée des lignes de 50px
+	min. de haut */
+	grid-column-gap: 10px;
+	grid-row-gap: 50px;
+	grid-template-areas:
+		"hd  hd  hd"
+		".   sec asi"
+		".   sec asi"
+		".   sec ."
+		"ft  ft  ft"; 
+}
+
+
+
+body {
+	font-family: Tahoma;
+}
+
+header {
+	grid-area: hd;
+	border-radius: 20px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 2px solid #5F5F5F;
+	color:rgb(0, 0, 0);
+
+}
+header a.active:hover {
+	background-color: rgb(255, 255, 255);
+	text-decoration: none;
+
+}
+header a:hover {
+	color:rgb(0, 0, 0);
+	background-color: rgba(145, 243, 242, 0.508);
+	text-decoration: none;
+}
+
+aside {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 2px solid #5F5F5F;
+  margin: auto;
+  padding: 20px;
+  width: inherit;
+  grid-area: asi;
+}
+
+section {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	overflow: auto;
+	padding: 15px;
+	grid-area: sec;
+}
+
+
+.link{
+	position:absolute;
+	top: 15px;
+	left: 20px;
+	width: 70px;
+	height: 70px;
+}
+
+.still{
+	position:absolute;
+	top: 15px;
+	right: 20px;
+	width: 70px;
+	height: 70px;
+}
+
+.orange{
+
+	position: absolute;
+	top: 280px;
+	right: 860px;
+	width:180px;
+	height:180px;	
+
+}
+
+.latex{
+	position: absolute;
+	top: 140px;
+	right: 500px;
+	width:250px;
+	height:250px;	
+}
+
+.office{
+	position:absolute;
+	top: 150px;
+	width: 230px;
+	height: 230px;
+}
+
+.Leyoni{
+	position:absolute;
+	right: 550px;
+	top: 200px;
+	width: 150px;
+	height: 150px;
+}
+
+.ski{
+	position:absolute;
+	right: 550px;
+	top: 420px;
+	width: 150px;
+	height: 150px;
+}
+
+img{
+	margin: auto;
+	border-radius: 10px;
+}
+
+
+
+
+
